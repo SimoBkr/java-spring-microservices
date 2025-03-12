@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8243d66-eee5-40d0-871c-1f17302a7162" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/config/MapStructConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/controller/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/dto/PatientResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/mapper/PatientMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/repository/PatientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-requests/patient-service/getPatients.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +21,26 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;docker-desktop&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="docker-desktop" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,6 +59,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;HTTP Request.get-requests | Define own filename for saved response file.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.getPatients | GET request to get all patients (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.getPatients | GET request to get all patients.executor&quot;: &quot;Run&quot;,
     &quot;Maven.patient-service [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.patient-service [clean,verify,install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.patient-service [clean].executor&quot;: &quot;Run&quot;,
@@ -80,7 +87,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -90,7 +97,13 @@
       <recent name="com.pm.patientservice.dto" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="openRunningConfigInTab" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
+    <configuration name="getPatients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/getPatients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="PatientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="patient-service" />
@@ -99,6 +112,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.getPatients | GET request to get all patients" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -111,7 +129,9 @@
       <workItem from="1741700625965" duration="1514000" />
       <workItem from="1741702150427" duration="2268000" />
       <workItem from="1741704455134" duration="3790000" />
-      <workItem from="1741709287869" duration="1214000" />
+      <workItem from="1741709287869" duration="5621000" />
+      <workItem from="1741755159272" duration="223000" />
+      <workItem from="1741755392380" duration="66000" />
     </task>
     <servers />
   </component>

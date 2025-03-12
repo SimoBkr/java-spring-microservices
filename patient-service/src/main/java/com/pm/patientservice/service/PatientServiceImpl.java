@@ -20,8 +20,6 @@ public class PatientServiceImpl implements PatientService {
     @Override
     public List<PatientResponseDTO> getPatients() {
         List<Patient> patients = repository.findAll();
-        List<PatientResponseDTO> patientResponseDTOS = mapper.patientsToPatientsResponseDTO(patients);
-        patientResponseDTOS.forEach(System.out::println);
-        return patientResponseDTOS;
+        return mapper.patientsToPatientsResponseDTO(patients);
     }
 }
