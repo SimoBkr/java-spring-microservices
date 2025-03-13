@@ -5,18 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8243d66-eee5-40d0-871c-1f17302a7162" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/exception/EmailAlreadyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-requests/patient-service/deletePatient.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-requests/patient-service/updatePatient.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/exception/PatientNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/validators/CreatePatientValidatorGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T053750.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T053828.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T053844.301.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T053920.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T053921.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T053952.404.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/my-response.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/getPatients.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/getPatients.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-requests/patient-service/savePatient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/savePatient.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/controller/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/dto/PatientRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/dto/PatientRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/mapper/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/mapper/PatientMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Interface" />
         <option value="HTTP Request" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,8 +80,11 @@
     "HTTP Request.get-requests | Define own filename for saved response file.executor": "Run",
     "HTTP Request.getPatients | GET request to get all patients (1).executor": "Run",
     "HTTP Request.getPatients | GET request to get all patients.executor": "Run",
+    "HTTP Request.savePatient | Create a new patient.executor": "Run",
     "HTTP Request.savePatient | Creates a new patient entity.executor": "Run",
     "HTTP Request.savePatient | Send POST request with json body.executor": "Run",
+    "HTTP Request.updatePatient | Creates a new patient entity.executor": "Run",
+    "HTTP Request.updatePatient | Update exsisting patient.executor": "Run",
     "Maven.patient-service [clean,install].executor": "Run",
     "Maven.patient-service [clean,verify,install].executor": "Run",
     "Maven.patient-service [clean].executor": "Run",
@@ -89,6 +102,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mac/Desktop/springCloudLearning/patient-management/api-requests/patient-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,7 +120,11 @@
       <recent name="com.pm.patientservice.service" />
       <recent name="com.pm.patientservice.dto" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-requests/patient-service" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pm.patientservice.exception" />
       <recent name="com.pm.patientservice.dto" />
     </key>
   </component>
@@ -114,13 +132,19 @@
     <option name="openRunningConfigInTab" value="true" />
   </component>
   <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
-    <configuration name="getPatients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/getPatients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
+    <configuration name="deletePatient | Delete exsisting patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/deletePatient.http" requestIdentifier="Delete exsisting patient" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="savePatient | Create a new patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/savePatient.http" requestIdentifier="Create a new patient" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="savePatient | Creates a new patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/savePatient.http" requestIdentifier="Creates a new patient entity" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="savePatient | Send POST request with json body" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/savePatient.http" requestIdentifier="Send POST request with json body" runType="Run single request">
+    <configuration name="updatePatient | Creates a new patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/updatePatient.http" requestIdentifier="Creates a new patient entity" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="updatePatient | Update exsisting patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/updatePatient.http" requestIdentifier="Update exsisting patient" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="PatientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -133,9 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.deletePatient | Delete exsisting patient" />
+        <item itemvalue="HTTP Request.updatePatient | Update exsisting patient" />
+        <item itemvalue="HTTP Request.savePatient | Create a new patient" />
+        <item itemvalue="HTTP Request.updatePatient | Creates a new patient entity" />
         <item itemvalue="HTTP Request.savePatient | Creates a new patient entity" />
-        <item itemvalue="HTTP Request.savePatient | Send POST request with json body" />
-        <item itemvalue="HTTP Request.getPatients | GET request to get all patients" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +178,7 @@
       <workItem from="1741704455134" duration="3790000" />
       <workItem from="1741709287869" duration="5621000" />
       <workItem from="1741755159272" duration="223000" />
-      <workItem from="1741755392380" duration="7676000" />
+      <workItem from="1741755392380" duration="12788000" />
     </task>
     <servers />
   </component>
