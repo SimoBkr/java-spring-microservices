@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8243d66-eee5-40d0-871c-1f17302a7162" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.patient-service-db.executor": "Run",
+    "Docker.patient-service.executor": "Run",
     "HTTP Request.deletePatient | Delete exsisting patient.executor": "Run",
     "HTTP Request.get-requests | Define own filename for saved response file.executor": "Run",
     "HTTP Request.getPatients | GET request to get all patients (1).executor": "Run",
@@ -95,6 +98,11 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propDebugger",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -113,7 +121,7 @@
   <component name="RunDashboard">
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
+  <component name="RunManager" selected="Docker.patient-service">
     <configuration name="deletePatient | Delete exsisting patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/deletePatient.http" requestIdentifier="Delete exsisting patient" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -137,6 +145,101 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="patient-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="postgres" />
+          <option name="containerName" value="patient-service-db" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_DB" />
+                <option name="value" value="db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_USER" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5432" />
+                <option name="hostPort" value="6000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/var/lib/postgresql/data" />
+                <option name="hostPath" value="$PROJECT_DIR$/../db-volumes/patient-service-db/" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="patient-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="patient-service:latest" />
+          <option name="containerName" value="patient-service" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_URL" />
+                <option name="value" value="jdbc:postgresql://patient-service-db:5432/db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_USERNAME" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_JPA_HIBERNATE_DDL_AUTO" />
+                <option name="value" value="update" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_SQL_INIT_MODE" />
+                <option name="value" value="always" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4000" />
+                <option name="hostPort" value="4000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="patient-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.patient-service" />
+      <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="HTTP Request.deletePatient | Delete exsisting patient" />
+      <item itemvalue="HTTP Request.savePatient | Create a new patient" />
+      <item itemvalue="HTTP Request.savePatient | Creates a new patient entity" />
+      <item itemvalue="HTTP Request.updatePatient | Creates a new patient entity" />
+      <item itemvalue="HTTP Request.updatePatient | Update exsisting patient" />
+      <item itemvalue="Spring Boot.PatientServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.deletePatient | Delete exsisting patient" />
@@ -160,7 +263,7 @@
       <workItem from="1741704455134" duration="3790000" />
       <workItem from="1741709287869" duration="5621000" />
       <workItem from="1741755159272" duration="223000" />
-      <workItem from="1741755392380" duration="13356000" />
+      <workItem from="1741755392380" duration="22109000" />
     </task>
     <servers />
   </component>
