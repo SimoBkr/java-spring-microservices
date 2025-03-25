@@ -5,9 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8243d66-eee5-40d0-871c-1f17302a7162" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-requests/patient-service/customersLoad.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/config/batch/CsvBatchConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/config/batch/CustomerProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/resources/customers.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/659cf955-4e91-44fd-b08d-571762167cbd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/659cf955-4e91-44fd-b08d-571762167cbd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/659cf955-4e91-44fd-b08d-571762167cbd/storage_v2/_src_/database/db.fgwAAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/659cf955-4e91-44fd-b08d-571762167cbd/storage_v2/_src_/database/db.fgwAAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054020.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054210.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054212.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054320.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054351.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054401.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054438.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054505.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054722.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054723.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054724.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054726.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054728.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054736.301.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054920.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T054951.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T055019.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T055323.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-12T055751.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="HTTP Request" />
       </list>
     </option>
@@ -61,6 +91,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Docker.patient-service-db.executor": "Run",
     "Docker.patient-service.executor": "Run",
+    "HTTP Request.customersLoad | #1.executor": "Run",
     "HTTP Request.deletePatient | Delete exsisting patient.executor": "Run",
     "HTTP Request.get-requests | Define own filename for saved response file.executor": "Run",
     "HTTP Request.getPatients | GET request to get all patients (1).executor": "Run",
@@ -87,7 +118,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mac/Desktop/springCloudLearning/patient-management/api-requests/patient-service",
+    "last_opened_file_path": "/Users/mac/Desktop/springCloudLearning/patient-management/patient-service/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,9 +142,12 @@
       <recent name="com.pm.patientservice.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/patient-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/api-requests/patient-service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pm.patientservice.controller" />
+      <recent name="com.pm.patientservice.repository" />
       <recent name="com.pm.patientservice.exception" />
       <recent name="com.pm.patientservice.dto" />
     </key>
@@ -121,14 +155,14 @@
   <component name="RunDashboard">
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Docker.patient-service">
+  <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
+    <configuration name="customersLoad | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/customersLoad.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="deletePatient | Delete exsisting patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/deletePatient.http" requestIdentifier="Delete exsisting patient" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="savePatient | Create a new patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/savePatient.http" requestIdentifier="Create a new patient" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="savePatient | Creates a new patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/savePatient.http" requestIdentifier="Creates a new patient entity" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="updatePatient | Creates a new patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/updatePatient.http" requestIdentifier="Creates a new patient entity" runType="Run single request">
@@ -157,12 +191,16 @@
                 <option name="value" value="db" />
               </DockerEnvVarImpl>
               <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="name" value="POSTGRES_HOST_AUTH_METHOD" />
+                <option name="value" value="trust" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD " />
                 <option name="value" value="password" />
               </DockerEnvVarImpl>
               <DockerEnvVarImpl>
                 <option name="name" value="POSTGRES_USER" />
-                <option name="value" value="admin_user" />
+                <option name="value" value="user_admin" />
               </DockerEnvVarImpl>
             </list>
           </option>
@@ -170,7 +208,7 @@
             <list>
               <DockerPortBindingImpl>
                 <option name="containerPort" value="5432" />
-                <option name="hostPort" value="6000" />
+                <option name="hostPort" value="6500" />
               </DockerPortBindingImpl>
             </list>
           </option>
@@ -178,7 +216,7 @@
           <option name="volumeBindings">
             <list>
               <DockerVolumeBindingImpl>
-                <option name="containerPath" value="/var/lib/postgresql/data" />
+                <option name="containerPath" value="/var/lib/postgresql/data_db" />
                 <option name="hostPath" value="$PROJECT_DIR$/../db-volumes/patient-service-db/" />
               </DockerVolumeBindingImpl>
             </list>
@@ -190,7 +228,7 @@
     <configuration name="patient-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="imageTag" value="patient-service:latest" />
+          <option name="imageTag" value="patient-service" />
           <option name="containerName" value="patient-service" />
           <option name="envVars">
             <list>
@@ -204,7 +242,11 @@
               </DockerEnvVarImpl>
               <DockerEnvVarImpl>
                 <option name="name" value="SPRING_DATASOURCE_USERNAME" />
-                <option name="value" value="admin_user" />
+                <option name="value" value="user_admin" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_JPA_DATABASE_PLATFORM" />
+                <option name="value" value="org.hibernate.dialect.PostgreSQLDialect" />
               </DockerEnvVarImpl>
               <DockerEnvVarImpl>
                 <option name="name" value="SPRING_JPA_HIBERNATE_DDL_AUTO" />
@@ -212,6 +254,10 @@
               </DockerEnvVarImpl>
               <DockerEnvVarImpl>
                 <option name="name" value="SPRING_SQL_INIT_MODE" />
+                <option name="value" value="always" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_BATCH_JDBC_INITIALIZE_SCHEMA" />
                 <option name="value" value="always" />
               </DockerEnvVarImpl>
             </list>
@@ -233,20 +279,20 @@
     <list>
       <item itemvalue="Docker.patient-service" />
       <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="HTTP Request.customersLoad | #1" />
       <item itemvalue="HTTP Request.deletePatient | Delete exsisting patient" />
       <item itemvalue="HTTP Request.savePatient | Create a new patient" />
-      <item itemvalue="HTTP Request.savePatient | Creates a new patient entity" />
       <item itemvalue="HTTP Request.updatePatient | Creates a new patient entity" />
       <item itemvalue="HTTP Request.updatePatient | Update exsisting patient" />
       <item itemvalue="Spring Boot.PatientServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.customersLoad | #1" />
         <item itemvalue="HTTP Request.deletePatient | Delete exsisting patient" />
         <item itemvalue="HTTP Request.updatePatient | Update exsisting patient" />
         <item itemvalue="HTTP Request.savePatient | Create a new patient" />
         <item itemvalue="HTTP Request.updatePatient | Creates a new patient entity" />
-        <item itemvalue="HTTP Request.savePatient | Creates a new patient entity" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +309,7 @@
       <workItem from="1741704455134" duration="3790000" />
       <workItem from="1741709287869" duration="5621000" />
       <workItem from="1741755159272" duration="223000" />
-      <workItem from="1741755392380" duration="22109000" />
+      <workItem from="1741755392380" duration="36523000" />
     </task>
     <servers />
   </component>
