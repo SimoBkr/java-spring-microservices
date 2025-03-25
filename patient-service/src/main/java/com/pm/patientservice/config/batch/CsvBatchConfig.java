@@ -3,10 +3,11 @@ package com.pm.patientservice.config.batch;
 import com.pm.patientservice.model.Customer;
 import com.pm.patientservice.repository.CustomerRepository;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.mapstruct.AfterMapping;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
@@ -18,7 +19,7 @@ import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
@@ -33,8 +34,7 @@ public class CsvBatchConfig {
     public FlatFileItemReader<Customer> customerReader() {
         FlatFileItemReader<Customer> itemReader = new FlatFileItemReader<>();
 
-
-        itemReader.setResource(new FileSystemResource("/Users/mac/Desktop/springCloudLearning/patient-management/patient-service/src/main/resources/data/customers.csv"));
+        itemReader.setResource(new ClassPathResource("data/customers.csv"));
         itemReader.setName("csv-reader");
         itemReader.setLinesToSkip(1);
         itemReader.setLineMapper(lineMapper());
