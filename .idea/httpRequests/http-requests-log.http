@@ -10,6 +10,120 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2025-03-25T214548.500.json
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4067/import
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
 <> 2025-03-25T133717.500.json
 
 ###
@@ -430,290 +544,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2025-03-13T022245.200.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-13T020039.400.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-13T015934.400.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-13T015854.400.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T170356.400.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T163304.500.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 171
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadimple.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T162109.400.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 168
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadie.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T161505.400.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T160327.200.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T160119.500.json
-
-###
-
-POST http://localhost:4000/patients/
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T160109.404.json
-
-###
-
-POST http://localhost:4000/patient
-Content-Type: application/json
-Content-Length: 176
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T160037.404.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 180
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed Bkr",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T155912.500.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 180
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed Bkr",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T155628.500.json
-
-###
-
-POST http://localhost:4000/patients
-Content-Type: application/json
-Content-Length: 180
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Mohamed Bkr",
-  "email": "mohamedbakadir@example.com",
-  "address": "123 Main Street, City, Country",
-  "dateOfBirth": "1990-05-15",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-03-12T155038.500.json
-
-###
-
-GET http://localhost:4000/patients
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2025-03-12T150928.200.json
-
-###
-
-GET http://localhost:4000/patients
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2025-03-12T055829.200.json
 
 ###
 

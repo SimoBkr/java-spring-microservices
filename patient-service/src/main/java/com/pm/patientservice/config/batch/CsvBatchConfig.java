@@ -3,6 +3,7 @@ package com.pm.patientservice.config.batch;
 import com.pm.patientservice.model.Customer;
 import com.pm.patientservice.repository.CustomerRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -24,14 +25,16 @@ import org.springframework.transaction.PlatformTransactionManager;
 @AllArgsConstructor
 public class CsvBatchConfig {
 
-    private  CustomerRepository customerRepository;
+    private CustomerRepository customerRepository;
 
     // Create Reader
 
     @Bean
     public FlatFileItemReader<Customer> customerReader() {
         FlatFileItemReader<Customer> itemReader = new FlatFileItemReader<>();
-        itemReader.setResource(new FileSystemResource("src/main/resources/customers.csv"));
+
+
+        itemReader.setResource(new FileSystemResource("/Users/mac/Desktop/springCloudLearning/patient-management/patient-service/src/main/resources/data/customers.csv"));
         itemReader.setName("csv-reader");
         itemReader.setLinesToSkip(1);
         itemReader.setLineMapper(lineMapper());
@@ -65,7 +68,6 @@ public class CsvBatchConfig {
         return new StepBuilder("step1", jobRepository)
                 .<Customer, Customer>chunk(10, transactionManager)
                 .reader(customerReader())
-                .processor(customerProcessor())
                 .writer(customerWriter())
                 .build();
     }

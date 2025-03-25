@@ -8,6 +8,5 @@ import org.springframework.stereotype.Repository;
 import java.io.Serializable;
 import java.util.UUID;
 
-@Repository
 public interface CustomerRepository extends JpaRepository<Customer, Serializable> {
 }
